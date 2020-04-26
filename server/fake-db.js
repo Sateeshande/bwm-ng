@@ -11,7 +11,7 @@ class FakeDb {
             bedrooms:4,
             shared: true,
             description: "Very nice apartment in center of the city.",
-            dailyRate: 43
+            dailyrate: 43
         },
         {
             title: "Modern apartment in center",
@@ -22,7 +22,7 @@ class FakeDb {
             bedrooms:1,
             shared: false,
             description: "Very nice apartment in center of teh city.",
-            dailyRate: 43
+            dailyrate: 34
         },
         {
             title: "Old house in nature",
@@ -32,8 +32,8 @@ class FakeDb {
             image: "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rentasl/image/5/image.jpeg",
             bedrooms:5,
             shared: true,
-            description: "Very nice apartment in center of teh city.",
-            dailyRate: 23
+            description: "Very nice apartment in center of the city.",
+            dailyrate: 23
         }
     ]
     }
