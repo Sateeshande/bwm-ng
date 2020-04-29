@@ -8,9 +8,8 @@ import { AppComponent } from './app.component';
 import {HeaderComponent} from './common/header/header.component';
 import { RentalComponent } from './rental/rental.component';
 
-import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
-
 import {RentalModule} from './rental/rental.module';
+
 
 
 
