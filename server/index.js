@@ -1,16 +1,21 @@
 
 
-const express = require('express');
+const 
+    express = require('express'),
 
-const mongoose = require('mongoose');
+    mongoose = require('mongoose'),
 
-const config = require('./config/dev');
+    bodyParser = require('body-parser'),
 
-const FakeDb = require('./Fake-db');
+    config = require('./config/dev'),
 
-const Rental = require('./models/rental');
+    FakeDb = require('./Fake-db'),
 
-const rentalRoutes = require('./routes/rentals');
+    Rental = require('./models/rental'),
+
+    rentalRoutes = require('./routes/rentals'),
+
+    userRoutes = require('./routes/users');
 
 
 mongoose.connect(config.DB_URI,{ useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
@@ -21,7 +26,9 @@ mongoose.connect(config.DB_URI,{ useNewUrlParser: true, useUnifiedTopology: true
 
 const app = express();
 
+app.use(bodyParser.json());
 app.use('/api/v1/rentals',rentalRoutes);
+app.use('/api/v1/users',userRoutes);
 
 const PORT = process.env.PORT || 3001;
 
