@@ -20,7 +20,7 @@ const
 
 mongoose.connect(config.DB_URI,{ useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
     const fakeDb = new FakeDb();
-    fakeDb.seedDb();
+    //fakeDb.seedDb();
 });
 
 
